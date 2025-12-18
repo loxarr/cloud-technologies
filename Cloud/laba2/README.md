@@ -17,17 +17,6 @@
 - Meter Name — конкретное название или тип использования
 - Consumed Service — указывает принадлежность к сервису Azure
 
-По какому алгоритму заполняли:
-- Смотрим на Meter Category — определяем основной тип сервиса
-- Ищем аналог в AWS — находим похожий сервис из ЛР1
-- Берем IT Tower и Service Family из аналога в AWS
-- Service Type — пишем название сервиса Azure
-- Service Sub Type и Service Usage Type — берем из Meter Sub-Category и Meter Name
-- 
-Например:
- 
-Amazon EC2(Сервис AWS)	→	Azure Virtual Machines(Сервис Azure)	→	Compute → Compute (Классификация)
-
 ### 2. Импорт 11 таблиц Azure и их заполнение
 Заполняем первые 5 пустых столбцов. Логика заполнения:
 - Смотрим на Meter Category (аналог ProductCode в AWS) — это основной идентификатор сервиса в Azure
@@ -68,5 +57,5 @@ Meter Name: Standard S% → Service Usage Type: Standard Tier Compute
 
 Это позволяет анализировать оба провайдера вместе: теперь видно, какие сервисы AWS и Azure являются аналогами, также можно сравнивать стоимоти аналогичных услуг
 
-В [файле](lab2.xlsm) находится полностью заполненные таблицы.
+В [файле](https://github.com/loxarr/cloud-technologies/blob/main/Cloud/laba2/laba2.xlsx) находится полностью заполненные таблицы.
 
