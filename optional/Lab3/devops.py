@@ -5,7 +5,7 @@ from fastapi import FastAPI
 app = FastAPI()
 client = docker.from_env()
 
-DATA_BASE_PATH = "/var/lib/minio-saas/data"
+DATA_BASE_PATH = "/Users/arpo/minio-data"
 
 @app.post("/instances/create")
 async def create_instance():
